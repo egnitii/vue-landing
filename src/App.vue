@@ -10,7 +10,7 @@ import Header from "./components/Header.vue"
 import FirstPart from "./components/FirstPart.vue"
 </script>
 
-<style scoped>
+<style>
 .wrapper {
   margin-top: 10px;
 }

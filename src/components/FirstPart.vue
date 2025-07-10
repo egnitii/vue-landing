@@ -1,5 +1,5 @@
 <template>
-    <div class="wrapper">
+    <div class="wrapper-content">
         <div class="content">
             <div class="text-wrapper">
                 <div class="text-header">
@@ -18,26 +18,47 @@
             <img class="rectangle" src="../assets/rectangle.svg" alt="rectangle">
         </div>
         <div class="icons-wrapper"> 
-                <img class="icon" src="../assets/1.svg" alt="Logo_Nike">
-                <img class="icon" src="../assets/2.svg" alt="Logo_">
-                <img class="icon" src="../assets/3.svg" alt="Logo_Microsoft">
-                <img class="icon" src="../assets/4.svg" alt="Logo_Ikea">
-                <img class="icon" src="../assets/5.svg" alt="Logo_">
-                <img class="icon" src="../assets/6.svg" alt="Logo_GoDaddy">
-                <img class="icon" src="../assets/7.svg" alt="Logo_Disney">
-                <img class="icon" src="../assets/8.svg" alt="Logo_Y">
-                <img class="icon" src="../assets/9.svg" alt="Logo_Google">
-                <img class="icon" src="../assets/10.svg" alt="Logo_Nasa">
+            <img 
+                v-for="icon in icons"
+                :key="icon.name"
+                :src="icon.component" 
+                :alt="icon.name"
+                class="icon"
+            />
+                
         </div>
     </div>
 </template>
 
 <script setup lang="ts">
 import BaseButton from './BaseButton.vue';
+import Logo_Nike from "../assets/1.svg";
+import Logo_A from "../assets/2.svg";
+import Logo_Microsoft from "../assets/3.svg";
+import Logo_Ikea from "../assets/4.svg";
+import Logo_T from "../assets/5.svg";
+import Logo_GoDaddy from "../assets/6.svg";
+import Logo_Disney from "../assets/7.svg";
+import Logo_Y from "../assets/8.svg";
+import Logo_Google from "../assets/9.svg";
+import Logo_Nasa from "../assets/10.svg";
+
+const icons = [
+    { name: "Logo_Nike", component: Logo_Nike},
+    { name: "Logo_A", component: Logo_A},
+    { name: "Logo_Microsoft", component: Logo_Microsoft},
+    { name: "Logo_Ikea", component: Logo_Ikea},
+    { name: "Logo_T", component: Logo_T},
+    { name: "Logo_GoDaddy", component: Logo_GoDaddy},
+    { name: "Logo_Disney", component: Logo_Disney},
+    { name: "Logo_Y", component: Logo_Y},
+    { name: "Logo_Google", component: Logo_Google},
+    { name: "Logo_Nasa", component: Logo_Nasa},
+]
 </script>
 
-<style scoped>
-.wrapper {
+<style>
+.wrapper-content {
     width: 100%;
     height: 930px;
     padding-top: 216.88px;
