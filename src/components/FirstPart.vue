@@ -8,8 +8,8 @@
                 <div class="text-info">
                     Generate beautiful, animated, static websites with your creative direction in a matter of minutes. Yes, minutes.
                 </div>
-                <base-button class="open-btn">Open the App</base-button>
-                <base-button class="price-btn">Pricing</base-button>
+                <base-button width="131px" marginRight="10px">Open the App</base-button>
+                <base-button backgroundColor="#30B467">Pricing</base-button>
             </div>
             <img class="round" src="../assets/orange_round.svg" alt="round">
             <div class="graphics">
@@ -32,12 +32,11 @@
     </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import BaseButton from './BaseButton.vue';
-
 </script>
 
-<style  scoped>
+<style scoped>
 .wrapper {
     width: 100%;
     height: 930px;
@@ -101,15 +100,6 @@ import BaseButton from './BaseButton.vue';
     line-height: 31.5px;
     letter-spacing: 0.23px;
 
-}
-
-.open-btn {
-    width: 131px;
-    margin-right: 10px;
-}
-
-.price-btn {
-    background-color: #30B467;
 }
 
 .round {

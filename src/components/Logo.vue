@@ -6,16 +6,11 @@
     </div>
 </template>
 
-<script>
-    export default {
-        name: "Logo"
-    }
+<script setup lang="ts">
 
 </script>
 
-<style  scoped>
-
-
+<style>
 .pic-logo {
   position: absolute;
   top: 11px;

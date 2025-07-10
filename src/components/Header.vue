@@ -17,12 +17,12 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import Logo from "./Logo.vue"
 import BaseButton from "./BaseButton.vue";
 </script>
 
-<style scoped>
+<style>
 .header {
   position: relative;
   width: 100%;

@@ -1,22 +1,42 @@
 <template>
-    <button class="base-button"> 
+    <button 
+        class="base-button"
+        :style="{ 
+            backgroundColor ,
+            width,
+            marginRight
+            }"
+    > 
         <slot> </slot> 
     </button>
 </template>
 
-<script setup>
-    
+<script setup lang="ts">
+import { defineProps } from 'vue'
+
+const props = defineProps({
+  backgroundColor: {
+    type: String,
+    default: '#2164E1',
+  },
+  width: {
+    type: String,
+    default: '74px',
+  },
+  marginRight: {
+    type: String,
+    default: '0px',
+  },
+})
 </script>
 
-<style scoped>
+<style>
 .base-button {
-    width: 74px;
     height: 42px;
     top: 4%;
     border-radius: 6px;
     color: white;
     border: none;
-    background-color: #2164E1;
     cursor: pointer;
 
     font-family: 'Roboto', sans-serif;
