@@ -1,10 +1,17 @@
-<script setup>
-import Container from './layout/Container.vue'
-import Header from './components/Header.vue'
+<template>
+  <div class="wrapper">
+    <Header></Header>
+    <FirstPart></FirstPart>
+  </div>
+</template>
+
+<script setup lang="ts">
+import Header from "./components/Header.vue"
+import FirstPart from "./components/FirstPart.vue"
 </script>
 
-<template>
-  <Container>
-    <Header />
-  </Container>
-</template>
+<style scoped>
+.wrapper {
+  margin-top: 10px;
+}
+</style>
