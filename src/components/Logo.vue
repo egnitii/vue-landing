@@ -1,14 +1,8 @@
 <template>
-    <div>
-        <img class="pic-logo" src="../assets/logo.svg" alt="logo">
-        <img class="pic-round" src="../assets/round.svg" alt="round">
-        <img class="pic-five" src="../assets/5l.svg" alt="five">
-    </div>
+        <img class="pic-logo" src="../assets/icons/logo.svg" alt="logo">
+        <img class="pic-round" src="../assets/icons/round.svg" alt="round">
+        <img class="pic-five" src="../assets/icons/5logo.svg" alt="five">
 </template>
-
-<script setup lang="ts">
-
-</script>
 
 <style>
 .pic-logo {

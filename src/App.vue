@@ -1,12 +1,15 @@
 <template>
   <div class="wrapper">
-    <Header></Header>
-    <FirstPart></FirstPart>
+    <HeaderMain></HeaderMain>
+    <main>
+      <FirstPart></FirstPart>
+    </main>
+    <!-- <footer></footer> -->
   </div>
 </template>
 
 <script setup lang="ts">
-import Header from "./components/Header.vue"
+import HeaderMain from "./components/HeaderMain.vue"
 import FirstPart from "./components/FirstPart.vue"
 </script>
 

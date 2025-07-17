@@ -1,20 +1,18 @@
 <template>
     <button 
-        class="base-button"
+        class="base-button text"
         :style="{ 
             backgroundColor ,
             width,
             marginRight
             }"
     > 
-        <slot> </slot> 
+      <slot></slot>
     </button>
-</template>
+</template> 
 
 <script setup lang="ts">
-import { defineProps } from 'vue'
-
-const props = defineProps({
+defineProps({
   backgroundColor: {
     type: String,
     default: '#2164E1',
@@ -38,11 +36,6 @@ const props = defineProps({
     color: white;
     border: none;
     cursor: pointer;
-
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-style: regular;
-    font-size: 15px;
-    line-height: 22.5px;
+    margin-top: 15px;
 }
 </style>
