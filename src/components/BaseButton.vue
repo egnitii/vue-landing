@@ -7,7 +7,8 @@
             marginRight
             }"
     > 
-      <slot></slot>
+    <slot></slot>
+      <!-- <slot></slot> можно делать одиночным, мб конфигурации обновить -->
     </button>
 </template> 
 

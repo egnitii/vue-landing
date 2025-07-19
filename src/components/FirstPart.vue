@@ -7,7 +7,7 @@
                 <base-button width="131px" marginRight="10px">Open the App</base-button>
                 <base-button backgroundColor="#30B467">Pricing</base-button>
             </div>
-            <div class="graphics">
+            <div class="screen-wrapper">
                 <img class="screen" src="../assets/icons/screen.svg" alt="screen">
             </div>
         </section>
@@ -109,41 +109,48 @@ const icons = [
             }
         }
 
-        .graphics {
+        .screen-wrapper {
             /* background-color: blueviolet; */
             width: 580PX;
             height: 366PX;
             
         }
 
-        .graphics::before {
+        .screen-wrapper::before {
             content: '';
             position: absolute;
             width: 200px;
             height: 200px;
-            background-image: url('../assets/orange_round.svg');
-            background-size: contain;
-            background-repeat: no-repeat;
+            top: 95px;
+            left: -76.98px;
+            opacity: 1;
+            border-radius: 999px;
+            background: rgba(242, 80, 34, 1);
+            box-shadow: 0px 8px 13px 0px rgba(242, 80, 34, 0.2);           
             top: 50%;
             left: 60%;
             transform: translate(-50%, -50%);
             z-index: 1; 
+            
+
         }
         .screen {
-            position: absolute;
+            position: relative;
             z-index: 2; 
         }
         
-        .graphics::after {
+        .screen-wrapper::after {
             content: '';
             position: absolute;
-            width: 150px; 
-            height: 150px;
-            background-image: url('../assets/rectangle.svg');
-            background-size: contain;
-            background-repeat: no-repeat;
-            top: 90%;  
-            right: -80px;
+            width: 65px;
+            height: 47px;
+            top: 87%;                
+            left: 93.5%;              /* ставим сразу за изображением */
+            margin-left: 20px;   
+            opacity: 1;
+            border-radius: 10px;
+            background: rgba(33, 100, 225, 1);
+            box-shadow: 0px 8px 13px 0px rgba(33, 100, 225, 0.2);
             transform: translateY(-50%);
             z-index: 3;
         }

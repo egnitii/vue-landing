@@ -1,6 +1,6 @@
 <template>
   <header>
-    <div class="header-inside">
+    <div class="header-inside"> 
       <div class="logo">
         <Logo></Logo>
       </div>

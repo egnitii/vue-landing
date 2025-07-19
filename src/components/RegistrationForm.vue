@@ -48,7 +48,7 @@ function handleSubmit() {
 }
 </script>
 
-<style>
+<style >
 
 .form-wrapper {
     display: flex;
